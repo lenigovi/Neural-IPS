@@ -9,8 +9,12 @@
 
 ![](./media/results_outliers.gif)
 
+Neural implicit representations have shown promising results for representing geometry due to their flexibility in encoding varied topologies, and easy integration with differentiable frameworks. Point clouds do not directly encode surface information while meshes are usually restricted to fixed topologies. Neural information processing
 
-## Dataset
+![](./media/input-pointcloud.png)
+
+
+# Dataset
 
 ### Dataset for Optimization-based Reconstruction
 The following datasets were considered: 
