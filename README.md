@@ -26,3 +26,12 @@ It is possible to be downloaded the processed dataset (~220 GB) by running:
 bash scripts/download_shapenet.sh
 ``` 
 The dataset should be found in `data/shapenet_psr` folder.
+
+
+### Training
+
+To train a new network from scratch, simply run:
+```python
+python train.py configs/learning_based/CONFIG.yaml
+```
+For available training options, take a look at `configs/default.yaml`.
