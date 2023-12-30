@@ -59,6 +59,7 @@ For available training options, take a look at `configs/default.yaml`.
             margin-bottom: 20px;
         }
     </style>
+<script src="https://threejs.org/build/three.js"></script>
 </head>
 
 
