@@ -41,16 +41,7 @@ python train.py configs/learning_based/CONFIG.yaml
 For available training options, take a look at `configs/default.yaml`.
 
 
-<body>
-  <h1>Point Cloud to Mesh Converter</h1>
-  <form id="uploadForm">
-    <input type="file" accept=".xyz, .ply" id="pointCloudFile" required>
-    <button type="submit">Convert to Mesh</button>
-  </form>
-  <div id="result"></div>
 
-  <script src="main.js"></script>
-</body>
 
 
 <head>
@@ -73,15 +64,26 @@ For available training options, take a look at `configs/default.yaml`.
 
 
 
-  <body>
-    <h1>Point Cloud to Mesh Converter</h1>
+<body>
+<h1>Point Cloud to Mesh Converter</h1>
     
-    <div id="dropZone" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
+<div id="dropZone" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
         <p>Drag and drop point cloud file here, or click to select file.</p>
         <input type="file" id="pointCloudInput" accept=".xyz, .ply" style="display: none;" onchange="handleFileSelect(event)">
-    </div>
+</div>
     
-    <div id="meshViewer"></div>
+<div id="meshViewer"></div>
+<script src="main.js"></script>
+</body>
 
-    <script src="main.js"></script>
+
+<body>
+  <h1>Point Cloud to Mesh Converter</h1>
+  <form id="uploadForm">
+    <input type="file" accept=".xyz, .ply" id="pointCloudFile" required>
+    <button type="submit">Convert to Mesh</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="main.js"></script>
 </body>
