@@ -39,3 +39,14 @@ To train a new network from scratch, simply run:
 python train.py configs/learning_based/CONFIG.yaml
 ```
 For available training options, take a look at `configs/default.yaml`.
+
+
+<body>
+  <h1>Point Cloud to Mesh Converter</h1>
+  <form id="uploadForm">
+    <input type="file" accept=".xyz, .ply" id="pointCloudFile" required>
+    <button type="submit">Convert to Mesh</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="main.js"></script>
