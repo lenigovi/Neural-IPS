@@ -26,4 +26,24 @@ document.getElementById('uploadForm').addEventListener('submit', async function 
       }
     }
   });
-  
+
+
+
+document.getElementById('uploadForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+});
+
+function convertPointCloud() {
+    const inputFile = document.getElementById('pointCloudInput').files[0];
+
+    if (inputFile) {
+        // Implement your point cloud to mesh conversion logic here
+        // You may use libraries like Three.js for 3D graphics
+
+        // Example: Display a message
+        const meshViewer = document.getElementById('meshViewer');
+        meshViewer.innerHTML = '<p>Mesh conversion result will be displayed here.</p>';
+    } else {
+        alert('Please select a point cloud file.');
+    }
+}
