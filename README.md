@@ -52,6 +52,27 @@ For available training options, take a look at `configs/default.yaml`.
   <script src="main.js"></script>
 </body>
 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Cloud to Mesh Converter</title>
+    <style>
+        #dropZone {
+            width: 100%;
+            height: 150px;
+            border: 2px dashed #ccc;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+
+
+
   <body>
     <h1>Point Cloud to Mesh Converter</h1>
     
