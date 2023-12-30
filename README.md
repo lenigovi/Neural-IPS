@@ -50,3 +50,17 @@ For available training options, take a look at `configs/default.yaml`.
   <div id="result"></div>
 
   <script src="main.js"></script>
+</body>
+
+  <body>
+    <h1>Point Cloud to Mesh Converter</h1>
+    
+    <div id="dropZone" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
+        <p>Drag and drop point cloud file here, or click to select file.</p>
+        <input type="file" id="pointCloudInput" accept=".xyz, .ply" style="display: none;" onchange="handleFileSelect(event)">
+    </div>
+    
+    <div id="meshViewer"></div>
+
+    <script src="main.js"></script>
+</body>
