@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="An interpretable and lightweight shape representation">
+  <meta name="keywords" content="nips, Neural-IPS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neural IPS</title>
+
+
+
+  </script> -->
+
+<link rel="icon" type="image/png" href="media/nips/nips_preview.png"> 
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./media/nips/css/bulma.min.css">
+  <link rel="stylesheet" href="./media/nips/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./media/nips/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./media/nips/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./media/nips/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./media/nips/js/fontawesome.all.min.js"></script>
+  <script src="./media/nips/js/bulma-carousel.min.js"></script>
+  <script src="./media/nips/js/bulma-slider.min.js"></script>
+  <script src="./media/nips/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="http://github.com/lenigovi">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/lenigovi/Bord-the-ParallelRobot">
+            Parallel Robot
+          </a>
+          <a class="navbar-item" href="https://github.com/lenigovi/RoboticAuscultation">
+            Robotic Auscultation
+          </a>
+          <a class="navbar-item" href="https://github.com/lenigovi/RobotMotionandGUI">
+            Motion and GUI Package
+          </a>
+          <a class="navbar-item" href="https://github.com/lenigovi/Fruitcake">
+            Mobile Robot
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Differentiable Learning-based<br/>3D Surface Reconstruction</h1>
+          <div class="column is-full_width">
+            <h2 class="title is-4">Neural IPS</h2>
+          </div>
+          <br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://github.com/lenigovi">Elena Valerija Herzegovina</a><sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href=" ">Amir Shahidi</a><sup>3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href=" ">Yiyi Liao</a><sup>2,3</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              <a href=" ">Michael Niemeyer</a><sup>4</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><br>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>RWTH Aachen</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Helmholtz Institute for Medical Information Technology</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>3</sup>KUKA</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>4</sup>Universal Robots</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=" "
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/lenigovi/Neural-IPS"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=" "
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              <!-- Poster Link. -->
+              <span class="link-block">
+                <a href=" "
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-palette"></i>
+                  </span>
+                  <span>Poster</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop height="100%">
+        <source src="media/nips/wheel.mp4"
+                type="video/mp4">
+      </video>
+      <br><br><br>
+      <h2 class="subtitle has-text-centered">
+      <strong>Neural IPS</strong> bridges oriented point clouds and meshes.
+    </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>TL;DR: Neural IPS is a differentiable surface reconstruction, and a hybrid shape representation that unifies implicit and explicit representations.</b>
+          </p>
+          <p>
+            Neural implicit representations have shown promising results for representing geometry due to their flexibility in encoding varied topologies, and easy integration with differentiable frameworks. Point clouds do not directly encode surface information while meshes are usually restricted to fixed topologies.
+            In recent years, neural implicit representations gained popularity in 3D reconstruction due to their expressiveness and flexibility. 
+            The differentiable PSR layer allows to bridge the explicit 3D point representation with the 3D mesh via the implicit indicator field, enabling end-to-end optimization of surface reconstruction metrics such as Chamfer distance. 
+            This duality between points and meshes hence allows us to represent shapes as oriented point clouds, which are explicit, lightweight and expressive. Compared to neural implicit representations, Neural IPS model is more interpretable, lightweight, and accelerates inference time by one order of magnitude. 
+            Compared to other explicit representations such as points, patches, and meshes, this model produces topology-agnostic, watertight manifold surfaces. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src=" "
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop height="100%">
+          <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/teaser.mp4"
+                  type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+          free-viewpoint
+          portraits.
+        </h2>
+      </div>
+    </div> -->
+    <!-- Shape Representation Comparison. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <hr>
+        <h2 class="title is-3">Different Shape Representations</h2>
+        <br>
+        <img src="media/nips/shape_rep_comp.png" class="center"/>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Traditional explicit shape representations (e.g. voxels, point clouds or meshes) are usually very efficient during inference, but all to some extent suffer from discretization.
+          </p>
+          <p>
+            Neural implicit representations produce smooth and high-quality shapes, but their inference time is typically very slow due to numerous network evaluations in 3D space.
+          </p>
+          <p>
+          <strong>Neural IPS unifies implicit and explicit shape representations.</strong> NIPS is interpretable, lightweight, topology agnostic, yields high-quality watertight meshes at low inference times and can be initialized from noisy or incomplete observations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Poisson Equation Intuition.-->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <h2 class="title is-3">Poisson Equation</h2>
+        <br>
+        <img src="media/nips/intuition_poisson.png" class="center"/>
+        <div class="content has-text-justified">
+
+          <p>
+            Solving the Poisson equation is the cornerstone of our nips representation. A shape (we use a circle as an example) can be represented as an implicit indicator function.
+            The premise of the Poisson equation is that:
+          </p>
+          <p><strong>The point normals are an approximation of the gradient of the indicator function</strong>. </p>
+          <p>
+            The research uses <strong>spectral methods</strong> to solve the Poisson equation. The spetral method is <strong>highly optimized on GPUs/TPUs</strong>. It is extremely simple and can be implemented with <strong>25-line code</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    
+    <!-- Applications.-->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <h2 class="title is-3">Applications</h2>
+      </div>
+    </div>
+    <h3 class="title is-4">Optimization-based 3D Reconstruction</h3>
+    <p>
+      Using <strong>NIPS</strong> you can have 3D reconstruction from only noisy unoriented point clouds / scans.
+    </p>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <img src="media/nips/pipeline_optim.png" class="center"/>
+      </div>
+    </div>
+      <div class="columns is-centered">
+        <!-- Wheel -->
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-6">Wheel (Genus > 0) </h2>
+            <video id="dollyzoom" autoplay controls muted loop height="100%">
+              <source src="media/nips/wheel.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+  
+        <!-- Wheel -->
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-6">Dragon (Real Scan)</h2>
+            <!-- <p>
+              Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+              would be impossible without nerfies since it would require going through a wall.
+            </p> -->
+            <video id="dollyzoom" autoplay controls muted loop height="100%">
+              <source src="media/nips/dragon.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!--/ Matting. -->
+    
+    <h3 class="title is-4">Learning-based 3D Reconstruction</h3>
+      <p>
+        You can use <strong>nips</strong> to learn parameters of a deep neural network. The network can handle large noises and outliers.
+      </p>
+      <br>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+        <img src="media/nips/pipeline_learn.png" class="center"/>
+        </div>
+        <br>
+      </div>
+      <div class="columns is-centered">
+        <!-- Wheel -->
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-6">Input Point Clouds with Large Noises</h2>
+            <video id="dollyzoom" autoplay controls muted loop height="100%">
+              <source src="media/nips/1_merged.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+  
+        <!-- Wheel -->
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-6">Input Point Clouds with 50% Outliers</h2>
+            <!-- <p>
+              Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+              would be impossible without nerfies since it would require going through a wall.
+            </p> -->
+            <video id="dollyzoom" autoplay controls muted loop height="100%">
+              <source src="media/nips/2_merged.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+</div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{Herzegovina2023NIPS,
+      author    = {Herzegovina, Elena Valerija},
+      title     = {Advances in Neural Information Processing Systems},
+      year      = {2023}
+}</code></pre>
+  </div>
+</section>
+
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    This work was supported by an NVIDIA research gift.
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content" style="text-align: center;">
+          <p>
+            Website by <a rel="license" href="http://github.com/lenigovi">Elena Valerija Herzegovina</a>
+          </p>
+        </div>
+      </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
